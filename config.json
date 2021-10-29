@@ -1,5 +1,5 @@
 {
-    "BASE_HOMEDIR" : "/home/pokybuild",
+    "BASE_HOMEDIR" : "/home/pokybuild3",
     "BASE_SHAREDDIR" : "/srv/autobuilder/autobuilder.yoctoproject.org",
     "BASE_PUBLISHDIR" : "/srv/autobuilder/downloads.yoctoproject.org",
 
@@ -59,7 +59,7 @@
             "SDK_LOCAL_CONF_BLACKLIST:append = 'BB_HASHSERVE'",
             "BB_DISKMON_DIRS = 'STOPTASKS,${TMPDIR},1G,100K STOPTASKS,${DL_DIR},1G STOPTASKS,${SSTATE_DIR},1G STOPTASKS,/tmp,100M,100K ABORT,${TMPDIR},100M,1K ABORT,${DL_DIR},100M ABORT,${SSTATE_DIR},100M ABORT,/tmp,10M,1K'",
             "BB_HASHSERVE = 'typhoon.yocto.io:8686'",
-            "RUNQEMU_TMPFS_DIR = '/home/pokybuild/tmp'",
+            "RUNQEMU_TMPFS_DIR = '/home/pokybuild3/tmp'",
             "BB_HEARTBEAT_EVENT = '60'",
             "BB_LOG_HOST_STAT_ON_INTERVAL = '1'",
             "BB_LOG_HOST_STAT_CMDS_INTERVAL = 'oe-time-dd-test.sh -c 100 -t 15'",
