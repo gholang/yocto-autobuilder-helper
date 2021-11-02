@@ -813,34 +813,10 @@
         "oe-selftest-ubuntu" : {
             "TEMPLATE" : "selftest"
         },
-        "oe-selftest-debian" : {
-            "TEMPLATE" : "selftest"
-        },
-        "oe-selftest-fedora" : {
-            "TEMPLATE" : "selftest"
-        },
-        "oe-selftest-opensuse" : {
-            "TEMPLATE" : "selftest"
-        },
-        "oe-selftest-centos" : {
-            "TEMPLATE" : "selftest"
-        },
         "reproducible" : {
             "TEMPLATE" : "reproducible"
         },
         "reproducible-ubuntu" : {
-            "TEMPLATE" : "reproducible"
-        },
-        "reproducible-debian" : {
-            "TEMPLATE" : "reproducible"
-        },
-        "reproducible-fedora" : {
-            "TEMPLATE" : "reproducible"
-        },
-        "reproducible-opensuse" : {
-            "TEMPLATE" : "reproducible"
-        },
-        "reproducible-centos" : {
             "TEMPLATE" : "reproducible"
         },
         "check-layer" : {
@@ -1068,18 +1044,7 @@
             ]
 
         },
-        "eclipse-plugin-oxygen" : {
-            "NEEDREPOS" : ["eclipse-poky-oxygen"],
-            "WRITECONFIG" : false,
-            "SENDERRORS" : false,
-            "EXTRAPLAINCMDS" : [
-                "cd scripts; ./setup.sh; ECLIPSE_HOME=`pwd`/eclipse/ ./build.sh oxygen-master master development"
-            ]
-        },
         "buildperf-ubuntu2004" : {
-            "TEMPLATE" : "buildperf"
-        },
-        "buildperf-centos7" : {
             "TEMPLATE" : "buildperf"
         },
         "auh" : {
@@ -1196,11 +1161,7 @@
         }
     },
     "buildtools" : {
-        "debian8*" : "${BUILDTOOLS_URL}",
-        "debian9*" : "${BUILDTOOLS_URL}",
-        "centos7*" : "${BUILDTOOLS_URL}",
         "ubuntu2004*" : "${BUILDTOOLS_URL}",
-        "perf-centos7*" : "${BUILDTOOLS_URL}",
         "perf-ubuntu2004*" : "${BUILDTOOLS_URL}"
     }
 }
