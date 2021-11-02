@@ -1076,7 +1076,7 @@
                 "cd scripts; ./setup.sh; ECLIPSE_HOME=`pwd`/eclipse/ ./build.sh oxygen-master master development"
             ]
         },
-        "buildperf-ubuntu1604" : {
+        "buildperf-ubuntu2004" : {
             "TEMPLATE" : "buildperf"
         },
         "buildperf-centos7" : {
@@ -1199,8 +1199,8 @@
         "debian8*" : "${BUILDTOOLS_URL}",
         "debian9*" : "${BUILDTOOLS_URL}",
         "centos7*" : "${BUILDTOOLS_URL}",
-        "ubuntu1604*" : "${BUILDTOOLS_URL}",
+        "ubuntu2004*" : "${BUILDTOOLS_URL}",
         "perf-centos7*" : "${BUILDTOOLS_URL}",
-        "perf-ubuntu1604*" : "${BUILDTOOLS_URL}"
+        "perf-ubuntu2004*" : "${BUILDTOOLS_URL}"
     }
 }
