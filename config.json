@@ -1035,15 +1035,6 @@
 
             }
         },
-        "eclipse-plugin-neon" : {
-            "NEEDREPOS" : ["eclipse-poky-neon"],
-            "WRITECONFIG" : false,
-            "SENDERRORS" : false,
-            "EXTRAPLAINCMDS" : [
-                "cd scripts; ./setup.sh; ECLIPSE_HOME=`pwd`/eclipse/ ./build.sh neon-master master development"
-            ]
-
-        },
         "buildperf-ubuntu2004" : {
             "TEMPLATE" : "buildperf"
         },
@@ -1091,20 +1082,6 @@
             "url" : "git://git.openembedded.org/bitbake",
             "branch" : "master",
             "revision" : "HEAD",
-            "no-layer-add" : true
-        },
-        "eclipse-poky-neon" : {
-            "url" : "git://git.yoctoproject.org/eclipse-yocto",
-            "branch" : "neon-master",
-            "revision" : "HEAD",
-            "checkout-dirname" : ".",
-            "no-layer-add" : true
-        },
-        "eclipse-poky-oxygen" : {
-            "url" : "git://git.yoctoproject.org/eclipse-yocto",
-            "branch" : "oxygen-master",
-            "revision" : "HEAD",
-            "checkout-dirname" : ".",
             "no-layer-add" : true
         },
         "meta-mingw" : {

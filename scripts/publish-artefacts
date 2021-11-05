@@ -192,19 +192,5 @@ case "$target" in
         sha256sums $TMPDIR/deploy/images/qemux86
         cp -R --no-dereference --preserve=links $TMPDIR/deploy/images/qemux86/*qemux86* $DEST/machines/qemu/qemu-tiny
         ;;
-    "eclipse-plugin-neon")
-        DIR=$WORKDIR/../scripts
-        # create sha256sums only for the zip files
-        for x in `ls $DIR/*.zip`; do sha256sum $x >> $x.sha256sum; done
-        mkdir -p $DEST/eclipse-plugin/neon
-        cp --no-dereference --preserve=links $DIR/org.*.zip $DIR/org.*.sha256sum $DEST/eclipse-plugin/neon
-        ;;
-    "eclipse-plugin-oxygen")
-        DIR=$WORKDIR/../scripts
-        # create sha256sums only for the zip files
-        for x in `ls $DIR/*.zip`; do sha256sum $x >> $x.sha256sum; done
-        mkdir -p $DEST/eclipse-plugin/oxygen
-        cp --no-dereference --preserve=links $DIR/org.*.zip $DIR/org.*.sha256sum $DEST/eclipse-plugin/oxygen
-        ;;
 esac
 
