@@ -308,6 +308,8 @@ else:
         stepnum = int(args.phase)
     except ValueError:
         stepnum = None
+    except TypeError:
+        stepnum = None
 
     if stepnum is not None:
         handle_stepnum(stepnum)
